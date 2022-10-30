@@ -1,0 +1,21 @@
+fieldset {
+    width: 50%;
+    margin: auto;
+    background-color: #ffd2ff;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4caf50;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+}

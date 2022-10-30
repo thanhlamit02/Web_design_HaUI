@@ -1,0 +1,20 @@
+h1 {
+    background-color: rgb(255, 102, 0);
+    border-bottom: 4px solid black;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 16px;
+}
+
+table,
+th,
+td {
+    border: 2px solid rgb(255, 102, 0);
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(255, 136, 81);
+    color: white;
+    text-align: left;
+}

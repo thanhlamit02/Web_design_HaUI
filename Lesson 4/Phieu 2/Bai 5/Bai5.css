@@ -1,0 +1,41 @@
+ul {
+    list-style: none;
+    background-color: blue;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+    padding: 20px 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+li:hover {
+    background-color: red;
+}
+
+.menu:hover {
+    background-color: rgb(194, 0, 0);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 220px;
+    z-index: 1;
+    background-color: brown;
+}
+
+.menu:hover .dropdown {
+    display: block;
+}

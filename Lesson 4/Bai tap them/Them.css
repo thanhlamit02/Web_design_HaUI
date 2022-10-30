@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.header img {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-bar {
+    margin-left: 20px;
+    margin-top: 200px;
+}
+
+.menu-list {
+    list-style: none;
+    width: 200px;
+    background-color: aquamarine;
+}
+
+.menu-list li {
+    padding: 20px;
+}
+
+.menu-list li:hover {
+    background-color: aqua;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.list {
+    position: relative;
+}
+
+.list-item {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    display: none;
+    width: 200px;
+    list-style: none;
+    background-color: bisque;
+}
+
+.list:hover .list-item {
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.content-left {
+    width: 300px;
+    margin-left: 30px;
+}
+
+.content-left ul {
+    margin-left: 40px;
+}
+
+.content-left ul li {
+    text-align: justify;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-first {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin-left: 160px;
+    margin-bottom: 160px;
+}
+
+.content-first img {
+    width: 50%;
+}
+
+.content-first p {
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2</title>
+</head>
+
+<style>
+    button {
+        color: white;
+        font-size: 24px;
+        border: none;
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px rgb(102, 101, 101);
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    }
+</style>
+
+<body>
+    <button onclick="bam(1)">1</button>
+    <button onclick="bam(2)">2</button>
+    <button onclick="bam(3)">3</button>
+    <button onclick="bam(4)">4</button>
+    <button onclick="bam(5)">5</button>
+    <button onclick="plus()">+</button>
+    <br>
+
+    <button onclick="bam(6)">6</button>
+    <button onclick="bam(7)">7</button>
+    <button onclick="bam(8)">8</button>
+    <button onclick="bam(9)">9</button>
+    <button onclick="bam(0)">0</button>
+    <button onclick="resultOfMath()">=</button>
+    <button id="showResult">0</button>
+    <br>
+
+
+    <script>
+        var sum = 0;
+        var a = 0;
+
+        function bam(x) {
+            //a nhan gtri cua event onClick
+            a = x;
+        }
+
+        function plus() {
+            //cong don thanh tong
+            sum += a;
+        }
+
+        function resultOfMath() {
+            var result = document.getElementById("showResult");
+            //in ra ket qua vao the span co id result
+            result.textContent = sum + a;
+            document.getElementById("showResult") = result;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang ky</title>
+</head>
+
+<body>
+    <fieldset>
+        <h1 align="center">Phiếu đăng kí tham gia chương trình khuyến mãi</h1>
+        <table width="100%" align="center" border="1px" cellpadding="5px" cellspacing="0">
+            <tr>
+                <th align="left">Họ và tên</th>
+                <th align="left"><input type="text" name="fullname" style="width: 90%;"></th>
+            </tr>
+            <tr>
+                <th align="left">Địa chỉ</th>
+                <th align="left"><input type="text" name="address" style="width: 70%;"></th>
+            </tr>
+            <tr>
+                <th align="left">Điện thoại</th>
+                <th align="left"><input type="text" name="phonenumber" style="width: 50%;"></th>
+            </tr>
+            <tr>
+                <th align="left">Phái</th>
+                <th align="left">
+                    <input type="radio" name="gender"> Nam
+                    <input type="radio" name="gender"> Nữ
+                </th>
+            </tr>
+            <tr>
+                <th align="left ">Nghề nghiệp</th>
+                <th align="left ">
+                    <select name="job" id="#">
+                        <option value="0">Giáo viên</option>
+                        <option value="1">Sinh viên</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th align="left ">Chọn sản phẩm tham gia</th>
+                <th align="left ">
+                    <input list="products">
+                    <datalist id="products">
+                        <option value="Kem đánh răng"></option>
+                        <option value="Bột giặt"></option>
+                        <option value="Dầu gội đầu"></option>
+                        <option value="Sữa tắm"></option>
+                    </datalist>
+                </th>
+            </tr>
+            <tr>
+                <th align="left ">Số người dự đoán tham gia</th>
+                <th align="left "><input type="text " name="numberofpeople " style="width: 30%; "></th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="submit" name="submit" value="Đồng ý">
+                </th>
+            </tr>
+
+
+        </table>
+    </fieldset>
+</body>
+
+</html>

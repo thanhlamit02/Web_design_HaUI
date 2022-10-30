@@ -1,0 +1,15 @@
+h1 {
+    background-color: #fecffd;
+    color: #ff3399;
+    text-align: center;
+}
+
+.p1,
+.p2,
+.p3 {
+    text-align: center;
+}
+
+hr {
+    width: 50%;
+}

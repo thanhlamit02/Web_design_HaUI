@@ -1,0 +1,21 @@
+div {
+    background-color: #a06d21;
+    height: 500px;
+    background-image: url("../Bai 2/image/chup-anh-hieu-ung-bokeh-la-gi-cach-chup-anh-bokeh-don-gian-bang-may-anh--2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 30% 90%;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    padding: 18px 0 18px 0;
+}
+
+p {
+    color: white;
+    text-align: justify;
+    padding: 0 20px 20px 20px;
+}

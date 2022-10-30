@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai 2</title>
+    <meta charset="utf-8">
+    <style>
+        .dong {
+            display: flex;
+        }
+        
+        .nut {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px;
+        }
+        
+        .main {
+            width: 290px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #result {
+            width: 280px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="dong">
+            <input type="text" id="result">
+        </div>
+
+        <div class="dong">
+            <div><button class="nut" id="1" onclick="ghep(this.id)">1</button></div>
+            <div><button class="nut" id="2" onclick="ghep(this.id)">2</button></div>
+            <div><button class="nut" id="3" onclick="ghep(this.id)">3</button></div>
+            <div><button class="nut" id="4" onclick="ghep(this.id)">4</button></div>
+            <div><button class="nut" id="5" onclick="ghep(this.id)">5</button></div>
+            <div><button class="nut" id="-" onclick="ghep(this.id)">-</button></div>
+        </div>
+        <div class="dong">
+            <div><button class="nut" id="6" onclick="ghep(this.id)">6</button></div>
+            <div><button class="nut" id="7" onclick="ghep(this.id)">7</button></div>
+            <div><button class="nut" id="8" onclick="ghep(this.id)">8</button></div>
+            <div><button class="nut" id="9" onclick="ghep(this.id)">9</button></div>
+            <div><button class="nut" id="0" onclick="ghep(this.id)">0</button></div>
+            <div><button class="nut" onclick="tinh()">=</button></div>
+        </div>
+    </div>
+
+    <script>
+        var s = "";
+
+        function ghep(id) {
+            s += id;
+            document.getElementById("result").value = s;
+        }
+
+        function tinh() {
+            document.getElementById("result").value = s + "=" + eval(s);
+        }
+    </script>
+</body>
+
+</html>
