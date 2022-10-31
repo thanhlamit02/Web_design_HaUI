@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.div1 {
+    background-color: aqua;
+    width: 100%;
+    height: 60px;
+}
+
+.div2 {
+    background-color: bisque;
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-column: 100px;
+}
+
+.div2-1 {
+    background-color: black;
+    width: 40%;
+}
+
+.div2-2 {
+    background-color: rgb(163, 17, 17);
+    width: 60%;
+}
