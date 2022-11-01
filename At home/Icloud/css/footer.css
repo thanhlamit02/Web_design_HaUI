@@ -1,0 +1,10 @@
+.footer {
+    width: 100%;
+    background-color: #e7e7e7;
+}
+
+.footer>h1 {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
