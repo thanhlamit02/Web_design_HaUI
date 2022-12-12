@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: rgb(124, 124, 239);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-list>li,
+.sub-menu>li {
+    padding: 20px;
+}
+
+.menu-list>li {
+    position: relative;
+}
+
+.menu-list>li:hover,
+.sub-menu>li:hover {
+    background-color: red;
+}
+
+.menu-list>li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sub-menu {
+    list-style-type: none;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.sub-menu>li>a {
+    text-decoration: none;
+}
+
+li:hover .sub-menu {
+    display: block;
+}
+
+.search {
+    position: absolute;
+    right: 20px;
+    background-color: aliceblue;
+    border-radius: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.search>input,
+.search>button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.search>input {
+    padding-left: 10px;
+}
+
+.search>button {
+    cursor: pointer;
+    background-color: rgb(255, 230, 1);
+    height: 40px;
+    padding: 10px;
+}
+
+.search>button:hover {
+    color: white;
+    background-color: rgb(253, 210, 55);
+}
